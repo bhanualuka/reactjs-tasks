@@ -2,6 +2,7 @@ import { MdDarkMode } from "react-icons/md";
 import "./ThemeChanger.css";
 import { useDispatch, useSelector } from "react-redux";
 import { toogeleThemeChanger } from "../reduxToolkit/slices/ThemeSlice";
+import light_Theme_image from "../assets/images/light_theme_URL.png";
 
 const ThemeChanger = () => {
   const toogoleTheme = useSelector((state) => state?.theme?.themeChanger);
@@ -15,7 +16,7 @@ const ThemeChanger = () => {
             dispatch(toogeleThemeChanger());
           }}
           className="icon light-theme"
-          src="https://png.pngtree.com/png-clipart/20230924/original/pngtree-night-mode-dark-mode-glyph-ui-icon-theme-web-screen-vector-png-image_12749665.png"
+          src={light_Theme_image}
           alt="LightTheme"
         />
       ) : (
