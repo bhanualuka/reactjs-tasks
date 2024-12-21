@@ -2,10 +2,9 @@ import { MdDarkMode } from "react-icons/md";
 import "./ThemeChanger.css";
 import { useDispatch, useSelector } from "react-redux";
 import { toogeleThemeChanger } from "../reduxToolkit/slices/ThemeSlice";
+
 const ThemeChanger = () => {
   const toogoleTheme = useSelector((state) => state?.theme?.themeChanger);
-  console.log(toogoleTheme);
-
   const dispatch = useDispatch();
 
   return (
