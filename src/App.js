@@ -1,9 +1,11 @@
+import SearchFunctionalityApi from "./Search/ApiSearchFunctionality";
 import ThemeChanger from "./Theme/ThemeChanger";
 
 function App() {
   return (
     <div>
-      <ThemeChanger />
+      {/* <ThemeChanger /> */}
+      <SearchFunctionalityApi />
     </div>
   );
 }
