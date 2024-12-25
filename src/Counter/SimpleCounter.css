@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Incremant Button */
+.inc {
+  width: 40px;
+  padding: 15px 10px;
+  margin-right: 35px;
+  font-size: 22px;
+  background-color: blue;
+  color: whitesmoke;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dec {
+  width: 40px;
+  padding: 15px 13px;
+  margin-left: 35px;
+  font-size: 22px;
+  background-color: red;
+  color: whitesmoke;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+p {
+  font-size: 50px;
+  padding-top: 10px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}

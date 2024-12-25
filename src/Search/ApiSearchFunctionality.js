@@ -2,8 +2,10 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AddProducts, AddSearch } from "../reduxToolkit/slices/FakeApiSlice";
 import "./ApiSearchFunctionality.css";
+import ShimmerUi from "./ShimmerUi";
 
 const SearchFunctionalityApi = () => {
+  
   const dispatch = useDispatch();
   const SearchData = useSelector((store) => store?.fakeData);
   const { Products, Search } = SearchData;
@@ -37,7 +39,6 @@ const SearchFunctionalityApi = () => {
     <div>
       {/* Jai Sai master Jai Bapuji Maharaj */}
       {/* <button> Click Here To See Data </button> */}
-
       <input
         className="input-Search"
         type="text"
@@ -47,11 +48,10 @@ const SearchFunctionalityApi = () => {
           handleSearch(e);
         }}
       />
-
       <button onClick={HandleTopRated}> Top Rated </button>
 
       <div className="data-container">
-        {Products &&
+        {Products && Products.length > 0 ? (
           Products.filter((item) =>
             item.title.toLowerCase().includes(Search.toLowerCase())
           ).map((item) => {
@@ -68,7 +68,10 @@ const SearchFunctionalityApi = () => {
                 </p>
               </div>
             );
-          })}
+          })
+        ) : (
+          <ShimmerUi />
+        )}
       </div>
     </div>
   );
