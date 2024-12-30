@@ -3,12 +3,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { AddProducts, AddSearch } from "../reduxToolkit/slices/FakeApiSlice";
 import "./ApiSearchFunctionality.css";
 import ShimmerUi from "./ShimmerUi";
+import { useApiFetchingData } from "./customHooks/ApiFetching";
 
 const SearchFunctionalityApi = () => {
-  
   const dispatch = useDispatch();
   const SearchData = useSelector((store) => store?.fakeData);
   const { Products, Search } = SearchData;
+
+  useApiFetchingData();
 
   const handleSearch = (e) => {
     dispatch(AddSearch(e.target.value));
@@ -22,18 +24,23 @@ const SearchFunctionalityApi = () => {
     dispatch(AddProducts(filterdProducts));
   };
 
+  // const data = useApiFetchingData();
+  /* 
   const FetchingData = async () => {
     try {
       const data = await fetch("https://fakestoreapi.com/products");
       const json = await data.json();
 
       dispatch(AddProducts(json));
-    } catch {}
+    } catch (error) {
+      console.log("Something went Wrong");
+    }
   };
 
   useEffect(() => {
     FetchingData();
-  }, []);
+    // useApiFetchingData();
+  }, []); */
 
   return (
     <div>
