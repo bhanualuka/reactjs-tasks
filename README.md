@@ -17,3 +17,15 @@ THEME TASK
 
 - Created Todo list which add tasks and delete them
 - maintined the state globally (@reduxjs/toolkit)
+
+  REDUX TOOLKIT ASYNTHUNK (FOR API CALLS)
+
+- Created cards by api call using reduxtoolkit AsyncThunk
+- Concepts Learned and implemented :
+  1.  CreateAsyncThunk - For Apicalling(We call Api or Fetch data in this Method which we export for all components,
+      Syntax:
+       const FetchData = CreateAsyncThunk( "userDefinedNames" , "function"- which performs async operations )
+      )
+  2.  ExtraReducers - For actions and state changing(through reducers)
+  3.  builder - builder is an object that returns the result of the async data done in CreatAsyncThunk 
+  4. addCase() is a function that accepts the pending , fullfilled , rejected  of data returns from AsynThunk .

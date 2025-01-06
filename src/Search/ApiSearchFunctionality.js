@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AddProducts, AddSearch } from "../reduxToolkit/slices/FakeApiSlice";
 import "./ApiSearchFunctionality.css";
@@ -59,11 +58,12 @@ const SearchFunctionalityApi = () => {
 
       <div className="data-container">
         {Products && Products.length > 0 ? (
-          Products.filter((item) =>
-            item.title.toLowerCase().includes(Search.toLowerCase())
-          ).map((item) => {
+          Products.filter((item) => {
+            if (Search.trim() === "") return true;
+            return item.title.toLowerCase().includes(Search.toLowerCase());
+          }).map((item) => {
             return (
-              <div key={item.id} className="Data-card">
+              <div key={item.id} className="Data-card" onClick={() => {}}>
                 <img className="img" src={item.image} alt="FakeImage" />
 
                 <h3> {item.title} </h3>
