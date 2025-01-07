@@ -46,3 +46,8 @@ API SEARCH FUNCTIONALITY AND TOPRATED FUNTIONALITY
 4.  While we using large Scale applications using external styles sheets(CSS) will automaticaly takes the responsibility of optimaization of application by browser in case of css styles , But in case of inline and internal styles of css it wont
 
               ---------------------------- Next ----------------------------------
+
+                                       Star Rating Task - 6
+                                        
+ 1. Developed Real time Star Rating feature 
+ 2. using Hooks , Array methods , Conditional Statements and css for styling                                        
