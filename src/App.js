@@ -10,12 +10,12 @@ function App() {
   return (
     <div>
       {/* <ThemeChanger /> */}
-      {/* <SearchFunctionalityApi /> */}
+      <SearchFunctionalityApi />
       {/* <SimpleCounter /> */}
       {/* <Todo /> */}
       {/* <MemoDarkTheme /> */}
       {/* <StarRating /> */}
-      <ShuffleItems />
+      {/* <ShuffleItems /> */}
     </div>
   );
 }

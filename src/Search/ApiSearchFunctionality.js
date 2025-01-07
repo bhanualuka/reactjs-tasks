@@ -23,6 +23,19 @@ const SearchFunctionalityApi = () => {
     dispatch(AddProducts(filterdProducts));
   };
 
+  const HanldeShuffle = () => {
+    const ShuffledItems = [...Products];
+    for (let i = ShuffledItems.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+
+      [ShuffledItems[i], ShuffledItems[j]] = [
+        ShuffledItems[j],
+        ShuffledItems[i],
+      ];
+    }
+
+    dispatch(AddProducts(ShuffledItems));
+  };
   // const data = useApiFetchingData();
   /* 
   const FetchingData = async () => {
@@ -55,6 +68,11 @@ const SearchFunctionalityApi = () => {
         }}
       />
       <button onClick={HandleTopRated}> Top Rated </button>
+
+      <button onClick={HanldeShuffle} className="shuffle">
+        {" "}
+        ShuffleItems{" "}
+      </button>
 
       <div className="data-container">
         {Products && Products.length > 0 ? (
