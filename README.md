@@ -10,6 +10,7 @@
                               SEARCH AND TOP RATED TASK -2
 
 API SEARCH FUNCTIONALITY AND TOPRATED FUNTIONALITY
+
 - Displayed data by api call and setuped store(@reduxjs/toolkit) maintined the state globally
 - Implemented SearchFunctionality and TopRated Functionality
 - Maintained Custoom Hooks for ApiCalling
@@ -48,6 +49,13 @@ API SEARCH FUNCTIONALITY AND TOPRATED FUNTIONALITY
               ---------------------------- Next ----------------------------------
 
                                        Star Rating Task - 6
-                                        
- 1. Developed Real time Star Rating feature 
- 2. using Hooks , Array methods , Conditional Statements and css for styling                                        
+
+5.  Developed Real time Star Rating feature
+6.  using Hooks , Array methods , Conditional Statements and css for styling
+
+              ---------------------------- Next ----------------------------------
+
+                                      Shuffling Items Task - 7
+
+7.  Created Shuffling items feature
+8.  implemented Fisher-Yates-Shuffling-Algorithm to create feature
