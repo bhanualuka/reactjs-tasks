@@ -1,4 +1,5 @@
 import SimpleCounter from "./Counter/SimpleCounter";
+import Parent from "./InputApiCall/Parent";
 import SearchFunctionalityApi from "./Search/ApiSearchFunctionality";
 import ShuffleItems from "./ShuffleItems/ShuffleItems";
 import { StarRating } from "./StarRating/StarRating";
@@ -10,12 +11,13 @@ function App() {
   return (
     <div>
       {/* <ThemeChanger /> */}
-      <SearchFunctionalityApi />
+      {/* <SearchFunctionalityApi /> */}
       {/* <SimpleCounter /> */}
       {/* <Todo /> */}
       {/* <MemoDarkTheme /> */}
       {/* <StarRating /> */}
       {/* <ShuffleItems /> */}
+      <Parent />
     </div>
   );
 }
