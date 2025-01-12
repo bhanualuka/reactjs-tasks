@@ -1,5 +1,6 @@
 import SimpleCounter from "./Counter/SimpleCounter";
 import Parent from "./InputApiCall/Parent";
+import ParentRtk from "./InputApiCall/RtkInputApiCall/ParentRtk";
 import SearchFunctionalityApi from "./Search/ApiSearchFunctionality";
 import ShuffleItems from "./ShuffleItems/ShuffleItems";
 import { StarRating } from "./StarRating/StarRating";
@@ -17,7 +18,8 @@ function App() {
       {/* <MemoDarkTheme /> */}
       {/* <StarRating /> */}
       {/* <ShuffleItems /> */}
-      <Parent />
+      {/* <Parent /> */}
+      <ParentRtk />
     </div>
   );
 }
