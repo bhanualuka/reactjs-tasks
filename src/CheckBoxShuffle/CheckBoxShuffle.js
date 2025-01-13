@@ -25,7 +25,6 @@ const CheckBoxShuffle = () => {
         ShuffleItems1[indx].title = ShuffleItems2[indx].title;
         ShuffleItems2[indx].title = temp;
       }
-
       item.checked = false;
     });
 
