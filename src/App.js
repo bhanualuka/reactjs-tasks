@@ -1,3 +1,4 @@
+import CheckBoxShuffle from "./CheckBoxShuffle/CheckBoxShuffle";
 import SimpleCounter from "./Counter/SimpleCounter";
 import Parent from "./InputApiCall/Parent";
 import ParentRtk from "./InputApiCall/RtkInputApiCall/ParentRtk";
@@ -19,7 +20,8 @@ function App() {
       {/* <StarRating /> */}
       {/* <ShuffleItems /> */}
       {/* <Parent /> */}
-      <ParentRtk />
+      {/* <ParentRtk /> */}
+      <CheckBoxShuffle />
     </div>
   );
 }
