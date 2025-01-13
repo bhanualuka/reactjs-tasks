@@ -15,11 +15,6 @@ const CheckBoxShuffle = () => {
     { title: "ItemD" },
   ]);
 
-  const handleCheckedItems = (indx) => {
-    const updatedList1 = [...list1];
-    updatedList1[indx].checked = !updatedList1[indx].checked;
-    setList1(updatedList1);
-  };
   const handleShuffleItems = () => {
     const ShuffleItems1 = [...list1];
     const ShuffleItems2 = [...list2];
@@ -30,10 +25,18 @@ const CheckBoxShuffle = () => {
         ShuffleItems1[indx].title = ShuffleItems2[indx].title;
         ShuffleItems2[indx].title = temp;
       }
+
+      item.checked = false;
     });
 
     setList1(ShuffleItems1);
     setList2(ShuffleItems2);
+  };
+
+  const handleCheckedItems = (indx) => {
+    const updatedList1 = [...list1];
+    updatedList1[indx].checked = !updatedList1[indx].checked;
+    setList1(updatedList1);
   };
 
   return (
