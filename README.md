@@ -5,7 +5,7 @@
 1.  Created dark and ligt theme functionlaity with some styles using css used react icons (installed react icon library)
 2.  Created Store installing @reduxjs/toolkit and react-redux library to maintained the state globally
 
-                ---------------------------- Next ----------------------------------
+         ---------------------------- Task-1 Completed ----------------------------------
 
                               SEARCH AND TOP RATED TASK -2
 
@@ -15,14 +15,14 @@
 4.  Implemented SearchFunctionality and TopRated Functionality
 5.  Maintained Custoom Hooks for ApiCalling
 
-                 ---------------------------- Next ----------------------------------
+          ---------------------------- Task-2 Completed ----------------------------------
 
                                     TODO LIST TASK -3
 
 6.  Created Todo list which add tasks and delete them
 7.  maintined the state globally (@reduxjs/toolkit)
 
-                    ---------------------------- Next ----------------------------------
+    ---------------------------- Task-3 Completed ----------------------------------
 
                           REDUX TOOLKIT ASYNTHUNK (FOR API CALLS) -4
 
@@ -37,7 +37,7 @@
 12. builder - builder is an object that returns the result of the async data done in CreatAsyncThunk
 13. addCase() is a function that accepts the pending , fullfilled , rejected of data returns from AsynThunk .
 
-                    ---------------------------- Next ----------------------------------
+         ---------------------------- Task-4 Completed ----------------------------------
 
                             DARK THEME USING USEMEMO HOOK - 5
 
@@ -46,27 +46,28 @@
 16. Using useMemo Hook will stops the unNecessary re-renders unitl the user changes the theme chage
 17. While we using large Scale applications using external styles sheets(CSS) will automaticaly takes the responsibility of optimaization of application by browser in case of css styles , But in case of inline and internal styles of css it wont
 
-                     ---------------------------- Next ----------------------------------
+    ---------------------------- Task-5 Completed ----------------------------------
 
                                        Star Rating Task - 6
 
 18. Developed Real time Star Rating feature
 19. using Hooks , Array methods , Conditional Statements and css for styling
 
-                       ---------------------------- Next ----------------------------------
+    ---------------------------- Task-6 Completed ----------------------------------
 
                                       Shuffling Items Task - 7
 
 20. Created Shuffling items feature
 21. implemented Fisher-Yates-Shuffling-Algorithm to create feature
 
-                       ---------------------------- Next ----------------------------------
-                                        Input ApiCalling Task -8
+    ---------------------------- Task-7 Completed ----------------------------------
+
+                             Input ApiCalling Task -8
 
 22. Fetching data through usergiven data from input box
 23. created input box , which takes id When user enter and submit the id it triggers an apicall and dispalys that partiucalr id data in the browser
 
-                      ---------------------------- Next ----------------------------------
+         ---------------------------- Task-8 Completed ----------------------------------
                                 CheckBoxShuffling Items Task - 9
 
 24. Displayed Two lists one is checkbox list another one is normal list with a suffle Check Items button
