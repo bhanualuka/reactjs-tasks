@@ -2,6 +2,7 @@ import CheckBoxShuffle from "./CheckBoxShuffle/CheckBoxShuffle";
 import SimpleCounter from "./Counter/SimpleCounter";
 import Parent from "./InputApiCall/Parent";
 import ParentRtk from "./InputApiCall/RtkInputApiCall/ParentRtk";
+import Pagination from "./Pagination/Pagination";
 import SearchFunctionalityApi from "./Search/ApiSearchFunctionality";
 import ShuffleItems from "./ShuffleItems/ShuffleItems";
 import { StarRating } from "./StarRating/StarRating";
@@ -21,7 +22,8 @@ function App() {
       {/* <ShuffleItems /> */}
       {/* <Parent /> */}
       {/* <ParentRtk /> */}
-      <CheckBoxShuffle />
+      {/* <CheckBoxShuffle /> */}
+      <Pagination />
     </div>
   );
 }

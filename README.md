@@ -17,7 +17,7 @@
 
           ---------------------------- Task-2 Completed ----------------------------------
 
-                                    TODO LIST TASK -3
+                                   TODO LIST TASK -3
 
 6.  Created Todo list which add tasks and delete them
 7.  maintined the state globally (@reduxjs/toolkit)
