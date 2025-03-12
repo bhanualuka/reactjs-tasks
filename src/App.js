@@ -1,5 +1,6 @@
 import CheckBoxShuffle from "./CheckBoxShuffle/CheckBoxShuffle";
 import SimpleCounter from "./Counter/SimpleCounter";
+import InfiniteScroll from "./InfiniteScroll/InfiniteScroll";
 import Parent from "./InputApiCall/Parent";
 import ParentRtk from "./InputApiCall/RtkInputApiCall/ParentRtk";
 import Pagination from "./Pagination/Pagination";
@@ -23,7 +24,8 @@ function App() {
       {/* <Parent /> */}
       {/* <ParentRtk /> */}
       {/* <CheckBoxShuffle /> */}
-      <Pagination />
+      {/* <Pagination /> */}
+      <InfiniteScroll />
     </div>
   );
 }
