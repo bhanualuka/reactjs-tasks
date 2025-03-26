@@ -1,0 +1,37 @@
+.sproduct {
+  width: 500px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 3px 3px lightgrey;
+  padding: 10px;
+}
+
+.sproduct img {
+  width: 180px;
+  height: 120px;
+}
+
+.price {
+  font-size: 25px;
+}
+
+.buttons-plus-minus button {
+  position: relative;
+  top: 30px;
+  margin: 30px;
+}
+
+.goToCart button {
+  position: relative;
+  top: 40px;
+  left: 80px;
+  width: 80px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: lightblue;
+  box-shadow: 0px 0px 3px 3px lightslategrey;
+  font-size: medium;
+  cursor: pointer;
+}

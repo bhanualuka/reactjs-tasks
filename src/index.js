@@ -9,13 +9,11 @@ import { ThemeProvider } from "./useMemo-DarkTheme/Context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <Provider store={appStore}>
-      <ThemeProvider>
-        <App />
-      </ThemeProvider>
-    </Provider>
-  </React.StrictMode>
+  <Provider store={appStore}>
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
