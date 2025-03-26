@@ -1,6 +1,6 @@
 .sproduct {
   width: 500px;
-  height: 400px;
+  height: 550px;
   margin: 10px;
   border-radius: 8px;
   box-shadow: 0px 0px 3px 3px lightgrey;
@@ -34,4 +34,8 @@
   box-shadow: 0px 0px 3px 3px lightslategrey;
   font-size: medium;
   cursor: pointer;
+}
+
+.quantity {
+  font-size: 25px;
 }

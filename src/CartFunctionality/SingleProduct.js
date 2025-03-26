@@ -52,7 +52,7 @@ const SingleProduct = () => {
           +
         </button>
 
-        <p> quantity:{quantity} </p>
+        <p className="quantity"> quantity:{quantity} </p>
 
         <button className="dec">-</button>
       </div>
