@@ -1,20 +1,33 @@
-.container-cart-card {
-  /* display: flex; */
-
+.body {
   width: 100vw;
   height: 100vh;
+}
+
+.parent-container {
+  width: 100vw;
+  height: 100vh;
+}
+.container-cart-card {
+  /* display: flex; */
+  width: 50%;
+  height: 80%;
+
+  box-shadow: 0px 0px 2px 3px lightgray;
 }
 
 .cart-card img {
   width: 70px;
   height: 70px;
   margin-top: 5px;
+  position: relative;
+  left: 30px;
+  top: 20px;
 }
 
 .cart-card {
   margin: 10px;
-  /* height: 100px; */
-  width: 50%;
+  height: 120px;
+  width: 90%;
   border-radius: 8px;
   box-shadow: 0px 0px 5px 1px lightslategrey;
   display: flex;
@@ -23,13 +36,12 @@
 .cart-quantity {
   font-size: 20px;
   position: relative;
-  top: 15px;
-  right: 300px;
 }
 
 .removeItem button {
   position: relative;
-  top: 15px;
+  top: 35px;
+  right: 30px;
   border-radius: 8px;
   border: none;
   width: 100px;
@@ -37,11 +49,11 @@
   background-color: red;
   color: whitesmoke;
   font-size: medium;
+  cursor: pointer;
 }
 
 .buttons-inc-dec {
-  position: relative;
-  bottom: 15px;
+  display: flex;
 }
 .buttons-inc-dec button {
   cursor: pointer;
@@ -51,12 +63,35 @@
   background-color: lightgreen;
   width: 30px;
   height: 30px;
-  position: relative;
-  top: 15px;
+  /* position: relative;
+  right: 200px;
+  top: 15px; */
   margin: 10px;
 }
 
 .cart-quantity {
+  /* position: relative;
+  right: 180px; */
+}
+
+.cart-price {
+  font-size: 20px;
+  /* position: relative;
+  right: 100px; */
+}
+
+.FinalPrice {
   position: relative;
-  left: 20px;
+  top: 20px;
+  left: 1000px;
+}
+
+.FinalPrice p {
+  width: 100px;
+  height: 50px;
+  border: none;
+  color: darkgreen;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
 }

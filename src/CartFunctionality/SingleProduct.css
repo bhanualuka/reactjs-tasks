@@ -1,6 +1,6 @@
 .sproduct {
   width: 500px;
-  height: 550px;
+  height: 650px;
   margin: 10px;
   border-radius: 8px;
   box-shadow: 0px 0px 3px 3px lightgrey;
@@ -25,7 +25,7 @@
 .goToCart button {
   position: relative;
   top: 40px;
-  left: 80px;
+  left: 250px;
   width: 80px;
   height: 50px;
   border: none;
@@ -37,5 +37,9 @@
 }
 
 .quantity {
+  font-size: 25px;
+}
+
+.total-price {
   font-size: 25px;
 }
